@@ -1,4 +1,4 @@
-# jiratime
+# jiralogwork
 
 ## jira automatic time tracking
 
@@ -11,7 +11,7 @@ Jiratime is a Tool to get jira log work automatically.
 Use the command line to install  jiratime
 
 ```bash
-git clone https://github.com/anilpank/jiratime
+git clone https://github.com/anilpank/jiralogwork
 ```
 
 ## Setup and Configuration
