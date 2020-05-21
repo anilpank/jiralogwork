@@ -84,9 +84,9 @@ public class Library {
 		{
 			String url = (String)prop.get("jira.login.url");
 			driver.get(url);
-			JiraLoginPageExt loginPageExt = new JiraLoginPageExt(driver);		
-			loginPageExt.enterUserName("averma");
-			loginPageExt.enterPassword("Purse5073#");
+			JiraLoginPageExt loginPageExt = new JiraLoginPageExt(driver);				
+			loginPageExt.enterUserName(configurations.get("jira.username"));
+			loginPageExt.enterPassword(configurations.get("jira.password"));
 			JiraLoginPage jiraLoginPage = loginPageExt.submit();
 			
 			jiraLoginPage.enterUserName("averma");
