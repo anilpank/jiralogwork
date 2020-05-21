@@ -89,8 +89,8 @@ public class Library {
 			loginPageExt.enterPassword(configurations.get("jira.password"));
 			JiraLoginPage jiraLoginPage = loginPageExt.submit();
 			
-			jiraLoginPage.enterUserName("averma");
-			jiraLoginPage.enterPassword("Purse5073#");
+			jiraLoginPage.enterUserName(configurations.get("jira.username"));
+			jiraLoginPage.enterPassword(configurations.get("jira.password"));
 			JiraHomePage homePage = jiraLoginPage.submit();
 			Configurations configurations = new Configurations();			
 			String[] nextRecord;
